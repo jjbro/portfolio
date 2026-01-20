@@ -1,5 +1,5 @@
-import Image from "next/image";
 import portfolioData from "@/data/portfolio.json";
+import ProjectThumbnail from "@/components/ProjectThumbnail";
 
 type Project = {
   title: string;
@@ -71,15 +71,10 @@ export default function ProjectsPage() {
               rel={hasExternalLink ? "noreferrer" : undefined}
               className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-200 hover:border-slate-300 hover:bg-slate-50/60"
             >
-              <div className="relative overflow-hidden rounded-xl bg-slate-50">
-                <Image
-                  src={resolveThumbnail(project)}
-                  alt={`${project.title} 썸네일`}
-                  width={640}
-                  height={360}
-                  className="h-56 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-                />
-              </div>
+              <ProjectThumbnail
+                src={resolveThumbnail(project)}
+                alt={`${project.title} 썸네일`}
+              />
               <div className="mt-4 border-t border-slate-200/70 pt-4 space-y-2">
                 <div className="flex items-center justify-between gap-3">
                   <h2 className="text-lg font-semibold text-slate-900">

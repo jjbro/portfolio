@@ -10,6 +10,8 @@ type Project = {
   description: string;
   details?: string[];
   stack: string[];
+  detail?: boolean;
+  video?: string;
   featured?: boolean;
   note?: string;
 };
@@ -51,19 +53,25 @@ export default function ProjectsPage() {
       <div className="grid gap-6 md:grid-cols-2">
         {featuredProjects.map((project) => {
           const hasExternalLink = Boolean(project.href);
-          const Wrapper: React.ElementType = hasExternalLink ? "a" : "div";
+          const hasDetailPage = Boolean(project.detail);
+          const link = hasExternalLink
+            ? project.href
+            : hasDetailPage
+              ? `/projects/${project.slug}`
+              : undefined;
+          const Wrapper: React.ElementType = link ? "a" : "div";
 
           const hasDetails = project.details && project.details.length > 0;
 
           return (
             <Wrapper
               key={project.title}
-              href={hasExternalLink ? project.href : undefined}
+              href={link}
               target={hasExternalLink ? "_blank" : undefined}
               rel={hasExternalLink ? "noreferrer" : undefined}
               className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-200 hover:border-slate-300 hover:bg-slate-50/60"
             >
-            <div className="relative overflow-hidden rounded-xl bg-slate-50">
+              <div className="relative overflow-hidden rounded-xl bg-slate-50">
                 <Image
                   src={resolveThumbnail(project)}
                   alt={`${project.title} 썸네일`}
@@ -72,7 +80,7 @@ export default function ProjectsPage() {
                   className="h-56 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
                 />
               </div>
-              <div className="mt-4 space-y-2">
+              <div className="mt-4 border-t border-slate-200/70 pt-4 space-y-2">
                 <div className="flex items-center justify-between gap-3">
                   <h2 className="text-lg font-semibold text-slate-900">
                     {project.title}

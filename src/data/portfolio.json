@@ -94,13 +94,20 @@
       "featured": true
     },
     {
-      "title": "디자인 시스템 구축 (현대오토벨)",
+      "title": "오토벨 디자인시스템",
       "slug": "design-system",
       "href": "",
-      "thumbnail": "/projects/design-system.svg",
+      "thumbnail": "/projects/design-system.png",
+      "video": "/projects/designSystem.mp4",
       "period": "2022.06 - 2023.02",
-      "description": "오토벨 리뉴얼 과정에서 UI 컴포넌트 가이드와 시스템 정립",
-      "stack": ["React", "Next.js", "Redux"]
+      "details": [
+        "- 오토벨 구축 과정에서 UI 컴포넌트 가이드와 시스템 정립",
+        "- Ant Design 벤치마킹",
+        "- jquery ui 라이브러리를 React 컴포넌트로 리팩토링"
+      ],
+      "stack": ["React", "Next.js", "Redux"],
+      "detail": true,
+      "featured": true
     },
     {
       "title": "현대프리비아",
@@ -130,7 +137,8 @@
       "details": [
         "- 컴포넌트 설계 및 UI 가이드",
         "- Dummy Data를 활용한 UI 데이터 바인딩",
-        "- 재사용 컴포넌트 제작 및 메모이제이션에 집중"
+        "- 재사용 컴포넌트 제작 및 메모이제이션에 집중",
+        "- storybook 도입"
       ],
       "stack": ["React", "Redux"],
       "featured": true

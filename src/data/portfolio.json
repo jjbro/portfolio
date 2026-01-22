@@ -76,6 +76,22 @@
   },
   "projects": [
     {
+      "title": "AI기반 주식분석",
+      "slug": "ssw-stock",
+      "href": "https://stock-ai-ssw.vercel.app/",
+      "thumbnail": "/projects/stock.png",
+      "period": "2026.01 - 2026.02",
+      "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Gemini API", "react-query", "lightweight-charts", "vercel"],
+      "details": [
+        "- AI기반 주식분석 Toy Project",
+        "- Gemini API를 활용한 주식분석",
+        "- Cursor AI를 통한 생산성 증가",
+        "- 주식 재무 데이터 가공, 뉴스 Api 호출, Ai 모델 호출",
+        "- 성능 최적화(병렬 데이터 패칭, lighthouse 진단)"
+      ],
+      "featured": true
+    },
+    {
       "title": "현대오토벨",
       "slug": "autobell",
       "href": "https://autobell.co.kr/main",
@@ -150,8 +166,7 @@
       "thumbnail": "/projects/yanulja.png",
       "period": "2023.03 - 2024.06",
       "description": "렌터카 섹션 신규 작업 화면 퍼블리싱 및 UI 개발",
-      "stack": ["Vue.js"],
-      "featured": true
+      "stack": ["Vue.js"]
     },
     {
       "title": "프로모션 빌더",

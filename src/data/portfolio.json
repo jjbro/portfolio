@@ -76,22 +76,6 @@
   },
   "projects": [
     {
-      "title": "AI기반 주식분석",
-      "slug": "ssw-stock",
-      "href": "https://stock-ai-ssw.vercel.app/",
-      "thumbnail": "/projects/stock.png",
-      "period": "2026.01 - 2026.02",
-      "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Gemini API", "react-query", "lightweight-charts", "vercel"],
-      "details": [
-        "- AI기반 주식분석 Toy Project",
-        "- Gemini API를 활용한 주식분석",
-        "- Cursor AI를 통한 생산성 증가",
-        "- 주식 재무 데이터 가공, 뉴스 Api 호출, Ai 모델 호출",
-        "- 성능 최적화(병렬 데이터 패칭, lighthouse 진단)"
-      ],
-      "featured": true
-    },
-    {
       "title": "현대오토벨",
       "slug": "autobell",
       "href": "https://autobell.co.kr/main",
@@ -102,7 +86,6 @@
       "details": [
         "- UI개발 및 페이지 퍼블리싱 (PL)",
         "- 팀 전체 React 기술 습득을 위해 교육",
-
         "- 페이지 컴포넌트 설계 및 UI컴포넌트(디자인 시스템) 구축",
         "- Dummy Data를 활용한 UI 데이터 바인딩",
         "- 개발팀과의 업무 협업에 주도적 역할"
@@ -119,7 +102,7 @@
       "details": [
         "- 오토벨 구축 과정에서 UI 컴포넌트 가이드와 시스템 정립",
         "- Ant Design 벤치마킹",
-        "- jquery ui 라이브러리를 React 컴포넌트로 리팩토링"
+        "- props 정의 및 컴포넌트 사용법 표기"
       ],
       "stack": ["React", "Next.js", "Redux"],
       "detail": true,
@@ -167,6 +150,22 @@
       "period": "2023.03 - 2024.06",
       "description": "렌터카 섹션 신규 작업 화면 퍼블리싱 및 UI 개발",
       "stack": ["Vue.js"]
+    },
+    {
+      "title": "AI기반 주식분석",
+      "slug": "ssw-stock",
+      "href": "https://stock-ai-ssw.vercel.app/",
+      "thumbnail": "/projects/stock.png",
+      "period": "2026.01 - 2026.02",
+      "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Gemini API", "react-query", "lightweight-charts", "vercel"],
+      "details": [
+        "- AI기반 주식분석 Toy Project",
+        "- Gemini API를 활용한 주식분석",
+        "- Cursor AI를 통한 생산성 증가",
+        "- 주식 재무 데이터 가공, 뉴스 Api 호출, Ai 모델 호출",
+        "- 성능 최적화(병렬 데이터 패칭, lighthouse 진단)"
+      ],
+      "featured": true
     },
     {
       "title": "프로모션 빌더",

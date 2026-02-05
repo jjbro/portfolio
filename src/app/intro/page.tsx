@@ -200,7 +200,7 @@ export default function IntroPage() {
                 <strong>Post-Framework (React/Next.js 시대):</strong> 이제는 <strong>'메인 스레드 부하(CPU-bound)'</strong>가 핵심 병목입니다.<br />
                 네트워크 속도는 빨라졌지만, 거대한 JS 실행 비용(<strong>Hydration</strong>)이 사용자 경험을 저해합니다.<br />
                 따라서 Next.js와 같은 프레임워크를 도입하여 불필요한 JS 전송을 줄이는 <strong>서버 컴포넌트(RSC)</strong> 아키텍처를 활용하고,<br />
-                실행 시점을 지연시키는 <strong>번들 스플리팅</strong> 전략을 통해<strong> TTI(Time to Interactive)</strong>를 단축하는 데에도 노력을 기울여야 합니다다.
+                실행 시점을 지연시키는 <strong>번들 스플리팅</strong> 전략을 통해<strong> 라우팅 이외의 컴포넌트 레벨도 TTI(Time to Interactive)</strong>를 단축하는 데에도 노력을 기울여야 합니다.
               </p>
               <p className="pt-2">
                 기술 스택은 변했지만 &apos;<strong>브라우저가 화면을 그리는 원리(Critical
